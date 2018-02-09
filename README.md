@@ -1,7 +1,7 @@
 # LearnPython
 python, git
 
-echo "# LearnPython" >> README.md
+# LearnGit
 
 git init
 
