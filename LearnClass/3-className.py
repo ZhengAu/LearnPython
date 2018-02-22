@@ -6,21 +6,25 @@
 # 在类中的属性前加上 __ 是私有属性，不能顺便更改
 # 可通过类中设置的函数，来进行更改
 
+
 class Person:
 
     def __init__(self, name, age):
         # 在属性前面加上__，为私有属性，类外不能直接更改
         self.__name = name
         self.__age = age
-		#公有属性，且设有默认值
-        self.school = "茂一" 
+        # 公有属性，且设有默认值
+        self.school = "茂一"
 
     def __str__(self):
         return "Person >> Name: " + self.__name + "\tAge: " + str(self.__age)\
-		+ "\tSchool: " + self.school
+            + "\tSchool: " + self.school
 
     def setAge(self, age):
         self.__age = age
+
+    def getAge(self):
+        return self.__age
 
 
 class People(object):
