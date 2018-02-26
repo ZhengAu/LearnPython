@@ -52,6 +52,7 @@ class HanxueBaoma(Horse):  # 汗血宝马类
     # def __init__(self, name, color="血红色"):
     #     Animal.__init__(self, name, color)
     #     # super().__init__(name, color)
+    #     # super().__init__(name)  # 仅仅设置name,color使用父类默认的
 
     def bark(self):
         print("---哈哈哈哈哈哈...---")
